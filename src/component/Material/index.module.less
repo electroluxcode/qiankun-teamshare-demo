@@ -1,0 +1,23 @@
+.collapse-header {
+  display: flex;
+  justify-content: space-between;
+  color: #1c1d23cc;
+  border-bottom: 2px solid #c6c8cd;
+  padding-bottom: 12px;
+  align-items: center;
+  margin: var(--formlity-decorator-vertical-margin) 0;
+  padding: 0 var(--formlity-decorator-horizontal-padding);
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+  }
+  .icon {
+    font-size: 24px;
+    cursor: pointer;
+    &.close {
+      transform: rotate(180deg);
+    }
+  }
+}
