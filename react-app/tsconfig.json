@@ -24,7 +24,7 @@
    "baseUrl": "./",
 	"paths": {
 	  "@/*": [
-	    "main-app/src/*"
+	    "react-app/src/*"
 	  ],
 	},
     "types": [
