@@ -3,8 +3,8 @@ export const AppSwrapper = styled.div`
 
 height: 100vh;
 width: 100vw;
-display: flex;
+/* display: flex;
 justify-content: center;
-align-items: center;
+align-items: center; */
 
 `

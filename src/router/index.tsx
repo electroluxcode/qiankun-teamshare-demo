@@ -22,15 +22,10 @@ export interface IRoute extends IRouteBase {
 
 
 import Preview from "@/views/Preview"
-import Render from "@/views/Render"
 const routes = [
   {
     path:"/",
     element:<Preview></Preview>
-  },
-  {
-    path:"/render",
-    element:<Render></Render>
   },
 ];
   
