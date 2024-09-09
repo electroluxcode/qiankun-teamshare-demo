@@ -31,7 +31,7 @@ export default function Preview() {
   const AppMeta = useMemo(() => {
 		return {
 			name: "load-app-test",
-			entry: `//localhost:3011`,
+			entry: `//localhost:7001`,
 		}
 	}, [])
   return (
