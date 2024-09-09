@@ -22,11 +22,29 @@ export interface IRoute extends IRouteBase {
 
 
 import Preview from "@/views/Preview"
+
+import LoadElement from "@/views/Load"
 const routes = [
   {
-    path:"/",
+    // 重要 8 路由参数获取
+    path:"/react-app/:id",
     element:<Preview></Preview>
   },
+  {
+    // 重要 9 loadMicroApp 动态加载 app
+    path:"/load-app/:id",
+    element:<LoadElement></LoadElement>
+  },
+  // {
+  //   path:"/",
+  //   element:<Layout></Layout>,
+  //   children:[
+  //     {
+  //       path:"/react-app",
+  //       element:<Preview></Preview>
+  //     }
+  //   ]
+  // },
 ];
   
 export default routes;

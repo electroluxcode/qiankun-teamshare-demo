@@ -112,6 +112,8 @@ checkBrowsers(paths.appPath, isInteractive)
       host: HOST,
       port,
     };
+
+    // 重要 1. 微应用创造 devServer，header 是 *
     const devServer = new WebpackDevServer(serverConfig, compiler);
     // Launch WebpackDevServer.
     devServer.startCallback(() => {

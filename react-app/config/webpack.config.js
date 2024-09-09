@@ -189,6 +189,7 @@ module.exports = function (webpackEnv) {
 
   return {
     target: ['browserslist'],
+    
     // Webpack noise constrained to errors and warnings
     stats: 'errors-warnings',
     mode: isEnvProduction ? 'production' : isEnvDevelopment && 'development',
@@ -203,6 +204,13 @@ module.exports = function (webpackEnv) {
     // This means they will be the "root" imports that are included in JS bundle.
     entry: paths.appIndexJs,
     output: {
+
+
+      // 重要 2.手动设置导出格式
+      library:"react-app-[name]",
+      libraryTarget:"umd",
+      globalObject:"window",
+
       // The build folder.
       path: paths.appBuild,
       // Add /* filename */ comments to generated require()s in the output.

@@ -24,7 +24,7 @@ export interface IRoute extends IRouteBase {
 import Preview from "@/views/Preview"
 const routes = [
   {
-    path:"/",
+    path:"/:id",
     element:<Preview></Preview>
   },
 ];
