@@ -1,5 +1,21 @@
 # teamshare-qiankun-demo
 
+## 0.项目启动
+
+全局搜索 DEFAULT_PORT 可以替换版本号
+
+### 0.1 主应用
+
+- step1: 
+
+
+### 0.2 子应用
+
+- step1: cd react-app
+
+
+
+
 # 1.前置工作
 
 - 微应用 devserver 设置 `Access-Control-Allow-Origin` 为 "*"
