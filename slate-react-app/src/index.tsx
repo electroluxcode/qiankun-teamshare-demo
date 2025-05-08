@@ -13,6 +13,7 @@ import App from './App'
 // useLayoutEffect
 // let win
 let islocal = window.location.href.includes("local") || window.location.href.includes("127.0.0.1")
+
 let config 
 if (!islocal) {
   config = {
@@ -24,7 +25,7 @@ if (!islocal) {
 if(window.__POWERED_BY_QIANKUN__){
   config = {
     // 这是测试动态加载的路由， 其他的测试渠道换成 react-app就好了
-    basename:"/load-app"
+    basename:"/docs"
   }
 }
 

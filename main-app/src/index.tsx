@@ -39,11 +39,11 @@ setTimeout(() => {
 }, 2000);
 registerMicroApps([{
   name: 'react-app',
-  entry: '//localhost:3011',
+  entry: '//localhost:3021',
   container: '#reactapp',
   // activeRule: '/react-app',
   // 重要 8 路由参数获取
-  activeRule:"/react-app/:id",
+  activeRule:"/docs/:id",
   // 重要 6.数据传参
   props:{
     nickname:"react-app 数据测试"

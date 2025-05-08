@@ -24,7 +24,18 @@ export interface IRoute extends IRouteBase {
 import Preview from "@/views/Preview"
 
 import LoadElement from "@/views/Load"
+const BaseElement = () => {
+  return (
+    <div>
+      test root
+    </div>
+  )
+}
 const routes = [
+  {
+    path:"/",
+    element:<BaseElement></BaseElement>
+  },
   {
     // 重要 8 路由参数获取
     path:"/react-app/:id",
